@@ -7,8 +7,8 @@ def test_winning_guess():
 
 def test_guess_too_high():
     # If secret is 50 and guess is 60, hint should be "Too High"
-    result = check_guess(60, 50)
-    assert result == "Too High"
+    outcome, message = check_guess(60, 50)
+    assert outcome == "Too High"
 
 def test_guess_too_low():
     # If secret is 50 and guess is 40, hint should be "Too Low"
