@@ -25,13 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+
+  A number guessing game where the player tries to guess a secret number within a limited number of attempts, receiving higher/lower hints after each guess.
+
+- [x] Detail which bugs you found.
+
+  The higher/lower hint messages were reversed, and the New Game button failed to reset the game status so the game became permanently unplayable after winning or losing.
+
+- [x] Explain what fixes you applied.
+
+  Swapped the hint messages in `check_guess` so "Too High" says Go LOWER and "Too Low" says Go HIGHER, and fixed the New Game button to reset `status`, `history`, and `attempts` back to their initial values.
+
 
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+
+![alt text](image.png)
 
 ## 🚀 Stretch Features
 
